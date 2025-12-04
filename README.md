@@ -58,3 +58,74 @@ This project is designed as both:
 ```bash
 git clone https://github.com/JoshOmoruyi/MMA-Pose-Coach.git
 cd MMA-Pose-Coach
+2. Install dependencies
+bash
+Copy code
+npm install
+3. Start development server
+bash
+Copy code
+npm run dev
+🧩 Project Structure
+arduino
+Copy code
+/src
+  ├── PoseCamera.jsx
+  ├── poseAnalysis.js
+  ├── PoseDetector.js
+  ├── drawAngles.js
+  ├── drawRotation.js
+  ├── punchTracker.js
+  ├── punchClassifier.js
+  ├── shadowboxingEngine.js
+  ├── ThreeDummy.jsx (optional 3D opponent)
+  └── App.jsx
+🔍 Technical Highlights (Deep-Dive)
+✨ Real-Time Pose Estimation
+Movenet Thunder with EMA smoothing
+
+Per-frame keypoint interpolation
+
+Stable angle calculations (NaN-safe)
+
+✨ Form Analysis Engine
+Computes biomechanical angles
+
+Scores user’s posture
+
+Multi-level conditional feedback system
+
+✨ Punch Detection System
+Calculates wrist velocity
+
+Identifies punch type from:
+
+Wrist direction vector
+
+Shoulder/hip alignment
+
+Angular change per frame
+
+Supports future extension → hooks, uppercuts, kicks
+
+✨ Shadowboxing Rendering Layer
+GPU-accelerated canvas
+
+Animated trails
+
+Hit spark particle system
+
+📝 Roadmap (Planned Features)
+AI opponent with movement
+
+Combo detection (jab–cross–hook chains)
+
+Round timer + scoring system
+
+Mobile version
+
+Pose correction heatmaps
+
+📄 License
+MIT License
+
