@@ -1,0 +1,74 @@
+# ------------------------------------
+# Node / NPM
+# ------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+pnpm-lock.yaml
+
+# ------------------------------------
+# Vite / Build Outputs
+# ------------------------------------
+dist/
+.vite/
+vite.config.js.timestamp-*
+vite.config.mts.timestamp-*
+
+# ------------------------------------
+# Local environment variables
+# ------------------------------------
+.env
+.env.local
+.env.*.local
+
+# ------------------------------------
+# TensorFlow.js cache
+# ------------------------------------
+.tfjs-models/
+tfjs_cache/
+tensorflowjs_models/
+
+# ------------------------------------
+# Three.js loader cache
+# ------------------------------------
+*.bin
+*.gltf
+*.glb
+
+# ------------------------------------
+# Logs
+# ------------------------------------
+logs/
+*.log
+*.log.*
+
+# ------------------------------------
+# OS files
+# ------------------------------------
+.DS_Store
+Thumbs.db
+
+# ------------------------------------
+# IDE / editor configs
+# ------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ------------------------------------
+# Testing
+# ------------------------------------
+coverage/
+
+# ------------------------------------
+# Optional: prevent accidental commit of large videos/images
+# ------------------------------------
+*.mp4
+*.avi
+*.mov
+*.png
+*.jpg
+*.jpeg
